@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+  padding-top: 70px; /* This ensures content is not hidden behind the fixed navbar */
+}
+
+/* Navbar Styles */
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #3498db !important;
+}
+
+/* Hero Section */
+.hero {
+  height: calc(100vh - 70px); /* Ensures the hero section fills the viewport height */
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .display-3 {
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.hero .display-3:hover {
+  transform: scale(1.05); /* Slightly enlarges the text when hovered */
+}
+
+.hero .btn-light {
+  background-color: #fff;
+  color: #3498db;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn-light:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.1); /* Slightly grows on hover */
+}
+
+/* About Section */
+#about p {
+  transition: color 0.3s ease;
+}
+
+#about p:hover {
+  color: #3498db; /* Change color when hovering over text */
+}
+
+/* Skills Section */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Moves the card up slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow effect on hover */
+}
+
+.card i {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.card i:hover {
+  color: #2ecc71; /* Change icon color on hover */
+  transform: rotate(10deg); /* Adds a slight rotation effect */
+}
+
+/* Contact Section */
+#contact a.btn-primary {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact a.btn-primary:hover {
+  background-color: #2ecc71;
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+/* Footer Styles */
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+footer p:hover {
+  color: #3498db; /* Changes footer text color on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .btn-light {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 5px 10px;
+  }
+}
